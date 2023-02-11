@@ -100,7 +100,7 @@ const EntryDetail = () => {
 					<p className="text-2xl font-semibold uppercase m-2 font-mono">{journalData.date.toDate().toGMTString()}</p>
 					<motion.textarea
 						onChange={handleInput}
-						initial={{ x: -400, opacity: 0 }}
+						initial={{ x: -100, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1, type: "spring", stiffness: 120 }}
 						className="bg-neutral-50 font-mono rounded border-2 border-violet-500/30 mt-3 p-3 w-full text-2xl focus:outline-none"
@@ -116,7 +116,7 @@ const EntryDetail = () => {
 						className="flex justify-end space-x-4 mt-2 font-semibold">
 						{notEditing ?
 							<motion.button exit={{ opacity: 0, scale: 0 }}
-								key={0} variants={item} onClick={handleEdit} className="bg-transparent border-slate-500 border-2 p-1 text-sm rounded text-slate-500 hover:bg-slate-500 hover:text-white transition-colors cursor-pointer">Edit</motion.button>
+								key={0} variants={item} onClick={handleEdit} className="bg-transparent border-violet-700 border-2 p-1 text-sm rounded text-violet-700 hover:bg-violet-700 hover:text-white transition-colors cursor-pointer">Edit</motion.button>
 							:
 							<motion.button exit={{ opacity: 0, scale: 0 }}
 								key={1} variants={item} onClick={handleSave} className="bg-transparent border-green-500 border-2 p-1 text-sm rounded text-green-500 hover:bg-green-500 hover:text-white transition-colors cursor-pointer">Save</motion.button>

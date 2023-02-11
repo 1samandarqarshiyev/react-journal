@@ -70,6 +70,7 @@ export const Entries = (props) => {
 								className="bg-neutral-50 rounded border-2 border-violet-500/30 mb-2 p-3 
 								hover:bg-neutral-100 transition-colors text-lg font-semibold font-code uppercase"
 							>
+								<span className="text-violet-500/50">#{idx} </span>
 								{elem.date.toDate().toGMTString()}
 							</motion.li>
 						</Link>
